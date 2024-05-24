@@ -1,0 +1,237 @@
+<style> /* Esto de arriba sirve para poner el logo en la pestaña de la web */
+    header {
+      color: white;
+      font-family: verdana;
+    }
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    nav {} 
+
+
+    body {
+      background-image: url("img/fondo.png");    /* En estas lineas se pone el fondo para que sea estático y no se repita */
+      background-repeat: no-repeat;     /* No se repite */
+      background-position: center;    /* Está centrado */
+      background-size: cover;     /* Ocupa la página entera */
+      height: 100%;       /* Para que ocupe todo el alto de la web */
+      background-attachment: fixed;     /*Se queda en el mismo sitio aunque hagas scroll */
+    }
+
+    main {}
+
+    footer {}
+
+    div {}
+
+    h1 {
+      font-family: "Kanit", sans-serif;
+      font-weight: 900;
+      font-style: normal;
+      font-size: 400%;
+      color: white;
+    }
+
+    h2 {
+      color: #e0c1e4;
+      font-size: 250%;
+    }
+
+    h3 {font-size: 200%;}
+
+    h4 {}
+
+    h5 {}
+
+    p {
+      font-family: "Kanit", sans-serif;
+      font-size: 120%;
+      font-style: normal;
+    }
+
+    a {             /* Esto hace que los enlaces en vez de ser azules sean del color que se elige, en este caso negro */
+  color: black;
+text-decoration:none;  
+}
+
+a:visited {         /* Esto hace que los links que ya se han pinchado en vez de ser morados sean de este color, inherit es que se queden como dicta la regla anterior */
+  color: inherit;
+  text-decoration: inherit;
+}
+
+    a:hover {       /* Esto hace que si pones el ratón encima del link se vuelva de este color */
+      color: yellow;
+      text-decoration:none;
+    }
+
+.lista {
+    font-size: 120%;
+}
+
+
+
+
+
+.presentacion-equipo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    grid-gap: 20px; /* Espacio entre tarjetas */
+  }
+  
+  .tarjeta-equipo {
+    background-color: #e100ff23;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tarjeta-equipo img {
+    width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .tarjeta-equipo h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: "Kanit", sans-serif;
+  }
+  
+  .tarjeta-equipo p {
+    font-size: 15.5px;
+    line-height: 1.5;
+    font-family: "Kanit", sans-serif;
+  }
+
+
+
+
+
+  #galeria {
+    text-align: center; /* Centrar el contenido de la sección */
+  }
+  
+  .contenedor-imagenes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta columnas automáticamente */
+    gap: 20px; /* Espacio entre tarjetas */
+  }
+  
+  .tarjeta-imagen {
+    background-color: #ffffff25;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .tarjeta-imagen img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+
+
+
+
+
+  #valoraciones {
+    text-align: center; /* Centrar el contenido de la sección */
+  }
+  
+  .lista-valoraciones {
+    list-style: none; /* Eliminar viñetas por defecto */
+    padding: 0;
+    margin: 0;
+    background-color: rgba(161, 161, 161, 0.637);
+  }
+  
+  .valoracion {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .estrella {
+    font-size: 20px;
+    color: #ff0000; /* Color de las estrellas */
+    margin-right: 5px;
+  }
+  
+  .valoracion h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .valoracion p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  
+  .valoracion time {
+    font-style: italic;
+    color: #gray;
+  }
+  
+
+
+
+
+
+
+    .container {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .links {
+      border: 2px solid fuchsia;
+      background: rgb(220, 220, 220);
+    }
+
+    .linkazul {  
+        color:inherit;
+        text-decoration: underline;
+    }
+
+    .text {
+      border: 0px dotted;
+      color: white;
+    }
+
+    .pie {
+      border: 0.5px dotted;
+      margin-left: 5%;
+      margin-right: 5%;
+      text-align: center;
+    }
+
+    .boton {
+      width: 20.7%;
+      margin: 1%;
+      background: grey;
+      padding: 1%;
+      opacity: 100%;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .boton-pie {
+      width: 28.7%;
+      margin: 1%;
+      background: rgb(211, 211, 211);
+      padding: 1%;
+      opacity: 100%;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .boton:hover {
+      background: black;
+    }
+
+  </style>
